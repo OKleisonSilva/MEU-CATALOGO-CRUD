@@ -1,0 +1,285 @@
+/* Remove as diretivas do Tailwind */
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* --- Estilos Base --- */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6; /* bg-gray-100 */
+}
+
+.app-container {
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.main-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px; /* p-8 */
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* --- Componente Header --- */
+.app-header {
+    background-color: #4f46e5; /* bg-indigo-600 */
+    color: white;
+    padding: 16px; /* p-4 */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* shadow-lg */
+}
+
+.header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 24px; /* text-3xl */
+    font-weight: bold;
+}
+
+.header-subtitle {
+    font-size: 14px; /* text-sm */
+    opacity: 0.8;
+}
+
+/* --- Listagem --- */
+.section-title {
+    font-size: 30px; /* text-3xl */
+    font-weight: 800; /* font-extrabold */
+    color: #4338ca; /* text-indigo-800 */
+    margin-bottom: 24px; /* mb-6 */
+}
+
+.add-button-container {
+    margin-bottom: 32px; /* mb-8 */
+}
+
+.add-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px; /* px-6 py-3 */
+    border: none;
+    font-size: 16px; /* text-base */
+    font-weight: 500;
+    border-radius: 9999px; /* rounded-full */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* shadow-lg */
+    color: white;
+    background-color: #4f46e5; /* bg-indigo-600 */
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.add-button:hover {
+    background-color: #4338ca; /* hover:bg-indigo-700 */
+}
+
+.add-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.icon-plus {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px; /* mr-2 */
+}
+
+/* --- Grid de Cards (Usando Flexbox ou Grid para compatibilidade) --- */
+.card-grid {
+    display: grid;
+    gap: 24px; /* gap-6 */
+    grid-template-columns: 1fr; /* Padrão mobile */
+}
+
+@media (min-width: 768px) { /* md */
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) { /* lg */
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* --- Componente Card (MediaCard) --- */
+.media-card {
+    background-color: white;
+    padding: 20px; /* p-5 */
+    border-radius: 8px; /* rounded-lg */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); /* shadow-md */
+    border-left: 4px solid #818cf8; /* border-l-4 border-indigo-400 */
+    transition: box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.media-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); /* hover:shadow-lg */
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px; /* mb-2 */
+}
+
+.card-title {
+    font-size: 20px; /* text-xl */
+    font-weight: bold;
+    color: #1f2937; /* text-gray-800 */
+}
+
+.card-badge {
+    padding: 4px 12px; /* px-3 py-1 */
+    font-size: 12px; /* text-xs */
+    font-weight: 600;
+    border-radius: 9999px; /* rounded-full */
+}
+
+.badge-filme {
+    background-color: #d1fae5; /* bg-green-100 */
+    color: #065f46; /* text-green-800 */
+}
+
+.badge-serie {
+    background-color: #dbeafe; /* bg-blue-100 */
+    color: #1e40af; /* text-blue-800 */
+}
+
+.card-info {
+    font-size: 14px; /* text-sm */
+    color: #4b5563; /* text-gray-600 */
+    margin-bottom: 12px; /* mb-3 */
+}
+
+.card-actions-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px; /* pt-3 */
+    border-top: 1px solid #f3f4f6; /* border-t border-gray-100 */
+}
+
+/* --- Status (Assistido/Pendente) --- */
+.status-text {
+    display: flex;
+    align-items: center;
+    font-size: 14px; /* text-sm */
+    font-weight: 500;
+}
+
+.status-green {
+    color: #059669; /* text-green-600 */
+}
+
+.status-yellow {
+    color: #d97706; /* text-yellow-600 */
+}
+
+.icon-status {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px; /* mr-1 */
+}
+
+/* --- Botões de Ação do Card --- */
+.action-buttons {
+    display: flex;
+    gap: 8px; /* space-x-2 */
+}
+
+.action-button {
+    padding: 4px; /* p-1 */
+    border-radius: 9999px; /* rounded-full */
+    transition: background-color 0.15s;
+    cursor: pointer;
+}
+
+.action-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.edit-button {
+    color: #4f46e5; /* text-indigo-600 */
+}
+
+.edit-button:hover {
+    background-color: #eef2ff; /* hover:bg-indigo-50 */
+    color: #3730a3; /* hover:text-indigo-800 */
+}
+
+.delete-button {
+    color: #dc2626; /* text-red-600 */
+}
+
+.delete-button:hover {
+    background-color: #fee2e2; /* hover:bg-red-50 */
+    color: #b91c1c; /* hover:text-red-800 */
+}
+
+.icon-action {
+    width: 20px;
+    height: 20px;
+}
+
+/* --- Rodapé --- */
+.app-footer {
+    background-color: #1f2937; /* bg-gray-800 */
+    color: white;
+    padding: 16px; /* p-4 */
+    margin-top: 32px; /* mt-8 */
+    font-size: 14px; /* text-sm */
+}
+/* --- Estilos Adicionais para o Componente Card --- */
+
+.media-card {
+    /* ... (Estilos existentes do media-card) ... */
+    display: flex; /* Transforma o card em um contêiner flexível */
+    flex-direction: column; /* Organiza a imagem e o conteúdo em coluna */
+    overflow: hidden; /* Garante que a imagem com borda arredondada fique dentro */
+    padding: 0; /* Remove o padding do card principal para que a imagem vá até a borda */
+}
+
+.card-image-wrapper {
+    width: 100%;
+    /* Define uma proporção de 2:3 para a imagem da capa (altura = 150% da largura) */
+    padding-top: 150%; 
+    position: relative;
+    overflow: hidden; 
+    border-radius: 8px 8px 0 0; /* Arredonda o topo */
+}
+
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+}
+
+.card-content-wrapper {
+    padding: 20px; /* Adiciona o padding que foi removido do .media-card */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ... (O FORMULÁRIO precisaria de mais estilos, mas usei classes genéricas) ... */

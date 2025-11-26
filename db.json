@@ -1,0 +1,44 @@
+{
+  "medias": [
+    {
+      "id": 1,
+      "titulo": "The Crown",
+      "tipo": "Série",
+      "lancamento": 2016,
+      "genero": "Drama Histórico",
+      "assistido": true
+    },
+    {
+      "id": 2,
+      "titulo": "Oppenheimer",
+      "tipo": "Filme",
+      "lancamento": 2023,
+      "genero": "Biografia/Drama",
+      "assistido": true
+    },
+    {
+      "id": 3,
+      "titulo": "Duna: Parte 2",
+      "tipo": "Filme",
+      "lancamento": 2024,
+      "genero": "Ficção Científica",
+      "assistido": false
+    },
+    {
+      "id": 4,
+      "titulo": "Stranger Things",
+      "tipo": "Série",
+      "lancamento": 2016,
+      "genero": "Ficção Científica/Terror",
+      "assistido": true
+    },
+    {
+      "id": 5,
+      "titulo": "A Origem",
+      "tipo": "Filme",
+      "lancamento": 2010,
+      "genero": "Ação/Ficção Científica",
+      "assistido": false
+    }
+  ]
+}
