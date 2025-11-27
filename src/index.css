@@ -28,7 +28,7 @@ body {
 
 /* --- Componente Header --- */
 .app-header {
-    background-color: #4f46e5; /* bg-indigo-600 */
+    background-color: #FA9667; /* bg-indigo-600 */
     color: white;
     padding: 16px; /* p-4 */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* shadow-lg */
@@ -56,7 +56,7 @@ body {
 .section-title {
     font-size: 30px; /* text-3xl */
     font-weight: 800; /* font-extrabold */
-    color: #4338ca; /* text-indigo-800 */
+    color: #FA8514; /* text-indigo-800 */
     margin-bottom: 24px; /* mb-6 */
 }
 
@@ -74,13 +74,13 @@ body {
     border-radius: 9999px; /* rounded-full */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* shadow-lg */
     color: white;
-    background-color: #4f46e5; /* bg-indigo-600 */
+    background-color: #FA9667; /* bg-indigo-600 */
     cursor: pointer;
     transition: background-color 0.15s;
 }
 
 .add-button:hover {
-    background-color: #4338ca; /* hover:bg-indigo-700 */
+    background-color: #FB5D13; /* hover:bg-indigo-700 */
 }
 
 .add-button:disabled {
@@ -120,7 +120,7 @@ body {
     padding: 20px; /* p-5 */
     border-radius: 8px; /* rounded-lg */
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1); /* shadow-md */
-    border-left: 4px solid #818cf8; /* border-l-4 border-indigo-400 */
+    border-left: 4px solid #FAA102; /* border-l-4 border-indigo-400 */
     transition: box-shadow 0.2s;
     display: flex;
     flex-direction: column;
@@ -225,12 +225,12 @@ body {
 }
 
 .delete-button {
-    color: #dc2626; /* text-red-600 */
+    color: #000000; /* text-red-600 */
 }
 
 .delete-button:hover {
     background-color: #fee2e2; /* hover:bg-red-50 */
-    color: #b91c1c; /* hover:text-red-800 */
+    color: #FFFFFF; /* hover:text-red-800 */
 }
 
 .icon-action {

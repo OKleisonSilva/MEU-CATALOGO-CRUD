@@ -41,7 +41,7 @@ const INITIAL_MOCK_DATA: MediaItem[] = [
         lancamento: 2024, 
         genero: "Ficção Científica", 
         assistido: false,
-        capaUrl: "https://via.placeholder.com/300x450/4f46e5/ffffff?text=Duna+2"
+        capaUrl: "https://imgs.search.brave.com/a0jyWNpJkUECHbhJxkm81xzHcuAbr7g1KYXBCGEBoPk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/d2FsbHBhcGVyZ2Fw/LmNvbS9jZG4vMjQv/MzMxL2R1bmUtcGhv/bmUtd2FsbHBhcGVy/LTRrLTEwNjV4MTcy/OS5qcGc"
     },
     { 
         id: 4, 
@@ -50,16 +50,16 @@ const INITIAL_MOCK_DATA: MediaItem[] = [
         lancamento: 2016, 
         genero: "Ficção Científica/Terror", 
         assistido: true,
-        capaUrl: "https://via.placeholder.com/300x450/4f46e5/ffffff?text=Stranger+Things"
+        capaUrl: "https://imgs.search.brave.com/3TxN_jfttT3qRy-9hEi9WWtMtmktPWXxmk_QaUqTWe8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXQuY29t/L3cvZnVsbC82Lzcv/Ny8xMjUwODYtMTA4/MHgxOTIwLW1vYmls/ZS1mdWxsLWhkLXN0/cmFuZ2VyLXRoaW5n/cy1iYWNrZ3JvdW5k/LmpwZw"
     },
     { 
-        id: 5, 
+        id: 5,
         titulo: "A Origem", 
         tipo: "Filme", 
         lancamento: 2010, 
         genero: "Ação/Ficção Científica", 
         assistido: false,
-        capaUrl: "https://via.placeholder.com/300x450/4f46e5/ffffff?text=A+Origem"
+        capaUrl: "https://imgs.search.brave.com/la3QA2Qqmx-6O9JPt-wnrYZvE3bLE4LjuA5nkSpK5WQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jdXJ0/b2ZpbG1lcy5jb20u/YnIvaW1hZ2Vucy9w/b3N0ZXJzL2ZpbG1l/cy9zb2JyZS1vLWZp/bG1lLWEtb3JpZ2Vt/LTcyLndlYnA"
     }
 ];
 
@@ -328,7 +328,7 @@ const App: React.FC = () => {
         return new Promise<void>(resolve => {
             setTimeout(() => {
                 setItems(INITIAL_MOCK_DATA);
-                setError("Modo de Simulação Ativado: Não foi possível conectar ao JSON Server (http://localhost:3000) devido a restrições de rede. O CRUD agora opera com dados em memória.");
+
                 setLoading(false);
                 resolve();
             }, 800);
